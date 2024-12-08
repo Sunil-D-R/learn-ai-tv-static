@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video Generation on LMS Platform</title>
+    <link>/tags/video-generation/</link>
+    <description>Recent content in Video Generation on LMS Platform</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/video-generation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating AI Generated Videos</title>
+      <link>/courses/fully-automate-your-videos-with-ai-heygen-make.com--airtable/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>/courses/fully-automate-your-videos-with-ai-heygen-make.com--airtable/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

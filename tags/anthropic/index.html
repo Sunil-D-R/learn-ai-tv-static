@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropic - Learn AI TV</title>
+    <link href="/learn-ai-tv/css/main.css" rel="stylesheet">
+    
+    
+    <link rel="icon" type="image/png" href="https://sunil-d-r.github.io/learn-ai-tv/images/favicon.png">
+    
+    
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
+    <header x-data="{ isOpen: false }" class="bg-white shadow relative">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between md:h-16">
+            
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="text-xl font-bold text-gray-900">
+                        
+                            LMS Platform
+                        
+                    </a>
+                </div>
+
+                
+                <div class="hidden md:ml-6 md:flex md:space-x-8">
+                    
+                        <a href="/learn-ai-tv/" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-primary-600">
+                            Home
+                        </a>
+                    
+                        <a href="/learn-ai-tv/about/" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-primary-600">
+                            About
+                        </a>
+                    
+                    <div class="relative group">
+                        <button class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-primary-600">
+                            Categories
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="hidden group-hover:block absolute left-0 mt-0 w-64 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
+                            <div class="py-2 max-h-96 overflow-y-auto">
+                                
+                                <a href="/learn-ai-tv/categories/automation" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    automation (2)
+                                </a>
+                                
+                                <a href="/learn-ai-tv/categories/b2b-strategies" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    b2b strategies (1)
+                                </a>
+                                
+                                <a href="/learn-ai-tv/categories/web-scraping" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    web scraping (1)
+                                </a>
+                                
+                                <div class="my-2 border-t border-gray-200"></div>
+                                
+                                <a href="/tags/ai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    ai (1)
+                                </a>
+                                
+                                <a href="/tags/anthropic/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    anthropic (1)
+                                </a>
+                                
+                                <a href="/tags/automation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    automation (1)
+                                </a>
+                                
+                                <a href="/tags/claude/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    claude (1)
+                                </a>
+                                
+                                <a href="/tags/email/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    email (1)
+                                </a>
+                                
+                                <a href="/tags/mcp/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    mcp (1)
+                                </a>
+                                
+                                <a href="/tags/model-context-protocol/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    model context protocol (1)
+                                </a>
+                                
+                                <a href="/tags/personalization/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    personalization (1)
+                                </a>
+                                
+                                <a href="/tags/web-scraping/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    web scraping (1)
+                                </a>
+                                
+                                <a href="/tags/workflow/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
+                                    workflow (1)
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="flex items-center md:hidden">
+                    <button @click="isOpen = !isOpen" type="button" 
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500" 
+                            aria-controls="mobile-menu" 
+                            :aria-expanded="isOpen">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="block md:flex md:items-center md:justify-end md:ml-4 md:flex-grow md:max-w-2xl py-4 md:py-0">
+                <div class="w-full relative">
+                    <div class="relative">
+                        <input type="search" 
+                               class="w-full bg-gray-100 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white" 
+                               placeholder="Search courses..." 
+                               id="searchInput"
+                               autocomplete="off">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                                <path d="M6.25 6.25a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H6.25z" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div id="searchResults" class="absolute w-full mt-1 bg-white rounded-lg shadow-lg border border-gray-200 divide-y divide-gray-200 hidden max-h-96 overflow-y-auto z-50">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div x-show="isOpen" 
+         class="fixed inset-0 bg-gray-800 bg-opacity-75 z-40"
+         @click="isOpen = false"
+         style="display: none;"></div>
+
+    
+    <div x-show="isOpen" 
+         class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50 transform transition-all duration-300 ease-in-out"
+         x-transition:enter="transform transition ease-in-out duration-300"
+         x-transition:enter-start="-translate-x-full"
+         x-transition:enter-end="translate-x-0"
+         x-transition:leave="transform transition ease-in-out duration-300"
+         x-transition:leave-start="translate-x-0"
+         x-transition:leave-end="-translate-x-full"
+         style="display: none;">
+        
+        <div class="flex items-center justify-between p-4 border-b">
+            <h2 class="text-lg font-semibold">Menu</h2>
+            <button @click="isOpen = false" class="p-2 rounded-md hover:bg-gray-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="px-4 py-4">
+            
+            <a href="/learn-ai-tv/" class="block py-2 text-gray-600 hover:text-gray-900">Home</a>
+            
+            <a href="/learn-ai-tv/about/" class="block py-2 text-gray-600 hover:text-gray-900">About</a>
+            
+        </nav>
+    </div>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    let searchIndex = [];
+
+    
+    fetch('\/learn-ai-tv\/index.json')
+        .then(response => response.json())
+        .then(data => {
+            searchIndex = data;
+        })
+        .catch(error => console.error('Error loading search index:', error));
+
+    
+    function performSearch(query) {
+        if (!query) {
+            searchResults.classList.add('hidden');
+            return;
+        }
+
+        query = query.toLowerCase();
+        const results = searchIndex.filter(item => 
+            item.title.toLowerCase().includes(query) ||
+            item.description.toLowerCase().includes(query) ||
+            (item.categories && item.categories.some(cat => cat.toLowerCase().includes(query))) ||
+            (item.tags && item.tags.some(tag => tag.toLowerCase().includes(query)))
+        );
+
+        displayResults(results);
+    }
+
+    
+    function displayResults(results) {
+        if (results.length === 0) {
+            searchResults.innerHTML = '<div class="p-4 text-sm text-gray-500">No results found</div>';
+        } else {
+            searchResults.innerHTML = results.map(result => `
+                <a href="${result.permalink}" class="block p-4 hover:bg-gray-50">
+                    <div class="flex items-start space-x-4">
+                        ${result.thumbnail ? `
+                            <div class="flex-shrink-0">
+                                <img src="${result.thumbnail}" alt="${result.title}" class="w-24 h-16 object-cover rounded">
+                            </div>
+                        ` : ''}
+                        <div class="flex-grow">
+                            <div class="font-medium text-gray-900">${result.title}</div>
+                            <div class="text-sm text-gray-500 mt-1">${result.description}</div>
+                            ${result.categories.length > 0 ? `
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    ${result.categories.map(category => `
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-primary-100 text-primary-800">
+                                            ${category}
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
+                            ${result.tags.length > 0 ? `
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    ${result.tags.map(tag => `
+                                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                            #${tag}
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                </a>
+            `).join('');
+        }
+        searchResults.classList.remove('hidden');
+    }
+
+    
+    searchInput.addEventListener('input', (e) => {
+        performSearch(e.target.value.trim());
+    });
+
+    
+    document.addEventListener('click', (e) => {
+        if (!searchResults.contains(e.target) && e.target !== searchInput) {
+            searchResults.classList.add('hidden');
+        }
+    });
+
+    
+    searchInput.addEventListener('focus', () => {
+        if (searchInput.value.trim()) {
+            searchResults.classList.remove('hidden');
+        }
+    });
+});
+</script>
+
+    
+    <main>
+        
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">
+            Tag: 
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
+                Anthropic
+            </span>
+        </h1>
+        <p class="text-lg text-gray-600">
+            1 course
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <article class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+            <a href="https://sunil-d-r.github.io/learn-ai-tv/courses/anthropic-agent-protocol/" class="block">
+                
+                <div class="aspect-w-16 aspect-h-9">
+                    <img src="http://i3.ytimg.com/vi/8mU2OeOCIrE/hqdefault.jpg" alt="Anthropic&#39;s Model Context Protocol: The Future of AI Tool Integration" class="object-cover">
+                </div>
+                
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Anthropic&#39;s Model Context Protocol: The Future of AI Tool Integration</h2>
+                    
+                    <p class="text-gray-600 text-sm mb-3 line-clamp-2">Explore Anthropic&#39;s innovative Model Context Protocol (MCP), a groundbreaking approach for integrating external tools and data into AI workflows. Learn how this protocol paves the way for versatile AI agents and tool interoperability.</p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        
+                        
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                            Automation
+                        </span>
+                        
+                        
+                        
+                        
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                            AI
+                        </span>
+                        
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                            Anthropic
+                        </span>
+                        
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                            Model Context Protocol
+                        </span>
+                        
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                            MCP
+                        </span>
+                        
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                            Claude
+                        </span>
+                        
+                        
+                    </div>
+                </div>
+            </a>
+        </article>
+        
+    </div>
+</div>
+
+    </main>
+    
+    <footer class="bg-gray-100 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h5 class="text-lg font-semibold text-gray-900 mb-4">About Us</h5>
+                <p class="text-gray-600">A modern learning platform providing high-quality courses in web development, programming, and data science.</p>
+            </div>
+            <div>
+                <h5 class="text-lg font-semibold text-gray-900 mb-4">Quick Links</h5>
+                <ul class="space-y-2">
+                    <li><a href="/" class="text-gray-600 hover:text-primary-600">Home</a></li>
+                    <li><a href="/" class="text-gray-600 hover:text-primary-600">Courses</a></li>
+                    <li><a href="/about" class="text-gray-600 hover:text-primary-600">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-lg font-semibold text-gray-900 mb-4">Stay Updated</h5>
+                
+                    
+                        <p class="text-gray-600 mb-4">Subscribe to get notified about new courses and learning resources.</p>
+                        <form class="space-y-3">
+                            <div>
+                                <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            <button type="submit" class="w-full bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition duration-150">
+                                Subscribe
+                            </button>
+                        </form>
+                    
+                
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-200">
+            <p class="text-center text-gray-500">&copy; 2024 LMS Platform. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="https://sunil-d-r.github.io/learn-ai-tv/js/main.js" defer></script>
+    
+    
+<script src="/learn-ai-tv/js/search.js"></script>
+</body>
+</html>

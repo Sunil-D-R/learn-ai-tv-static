@@ -1,0 +1,297 @@
+[
+    {
+        "title": "Anthropic's Model Context Protocol: The Future of AI Tool Integration",
+        "description": "Explore Anthropic's innovative Model Context Protocol (MCP), a groundbreaking approach for integrating external tools and data into AI workflows. Learn how this protocol paves the way for versatile AI agents and tool interoperability.",
+        "permalink": "/courses/anthropic-agent-protocol/",
+        "thumbnail": "http://i3.ytimg.com/vi/8mU2OeOCIrE/hqdefault.jpg",
+        "categories": ["Automation"],
+        "tags": ["AI","Anthropic","Model Context Protocol","MCP","Claude"]
+    },
+    {
+        "title": "Scrape, Analyze, and Personalize: A Comprehensive Workflow",
+        "description": "Learn how to scrape websites, analyze their data, and craft highly personalized emails using a powerful workflow.",
+        "permalink": "/courses/scrape-analyze-and-personalize-a-comprehensive-workflow/",
+        "thumbnail": "http://i3.ytimg.com/vi/8VICZS9tSVo/hqdefault.jpg",
+        "categories": ["Web scraping","Automation","B2B strategies"],
+        "tags": ["web scraping","automation","email","personalization","workflow"]
+    },
+    {
+        "title": "AI Agents: The Future of Business is Here!",
+        "description": "Explore the groundbreaking advancements in AI agents and their potential to revolutionize how businesses are built and operated. Learn how AI agents are automating tasks, creating companies, and reshaping the future of work.",
+        "permalink": "/courses/i-watched-an-ai-agent-create-its-own-company---not-clickbait/",
+        "thumbnail": "https://i.ytimg.com/vi/JZTlp_DpnvA/sddefault.jpg",
+        "categories": ["Automation","Business Strategy","Generative AI"],
+        "tags": ["AI Agents","Automation","Business","Blockchain","Smart Contracts","Future of Work","LLC","odoo"]
+    },
+    {
+        "title": "AI Article Generator with n8n: Part 1 - Sequential LLM Chain",
+        "description": "Learn how to create an AI article generator using n8n by integrating it as a sequential LLM chain.  Discover powerful prompting techniques for better AI responses and compare it to using an AI agent.",
+        "permalink": "/courses/n8n-tutorial-%238-integrate-ai-using-sequential-llm-chaining/",
+        "thumbnail": "https://i.ytimg.com/vi/NrtTbOEvub4/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering"],
+        "tags": ["OpenAI","n8n","LLM","Prompting","AI","Article Generation","Workflow Automation"]
+    },
+    {
+        "title": "AI is the New Electricity: Generative AI Opportunities and Agentic Workflows",
+        "description": "Explore the biggest opportunities in AI, focusing on generative AI's impact on application development and the rise of agentic workflows.",
+        "permalink": "/courses/andrew-ng-explores-the-rise-of-ai-agents-and-agentic-reasoning--build-2024-keynote/",
+        "thumbnail": "https://i.ytimg.com/vi/KrRD7r7y7NY/sddefault.jpg",
+        "categories": ["Generative AI","Prompt Engineering","Automation"],
+        "tags": ["Generative AI","Large Language Models","Agentic AI","Prompt Engineering","AI Applications","OpenAI","Google AI","Anthropic"]
+    },
+    {
+        "title": "AI Website Generation: From Idea to MVP in 30 Minutes!",
+        "description": "Learn how to leverage AI to build a multi-page website in minutes, using Next.js, ChatGPT, and other tools. This video showcases a complete workflow, from initial prompt to deployment-ready MVP.",
+        "permalink": "/courses/build-profitable-programmatic-seo-websites-with-ai/",
+        "thumbnail": "https://i.ytimg.com/vi/RkSLALcfa6U/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Coding","Website Development"],
+        "tags": ["OpenAI","ChatGPT","Next.js","Server-Side Rendering","SEO","Website Automation","Bolt.new","Perplexity","RapidAPI","Walmart API","Strategy"]
+    },
+    {
+        "title": "Automate Personalized Emails with AI: Web Scraping \u0026 LLM",
+        "description": "Learn how to scrape websites, analyze data, and generate personalized emails using AI and a no-code workflow.",
+        "permalink": "/courses/scrape-summarize-and-email-build-this-workflow-in-minutes-no-code/",
+        "thumbnail": "https://i.ytimg.com/vi/8VICZS9tSVo/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","AI Assistant","RAG","Voice"],
+        "tags": ["OpenAI","Claude","Web Scraping","AI","Automation","Email Marketing","Personalization","Strategy"]
+    },
+    {
+        "title": "Automate Web Scraping with Make.com, Google Sheets \u0026 OpenAI",
+        "description": "Learn how to build a fully automated web scraping system using Make.com, Google Sheets, and OpenAI to extract valuable data efficiently.",
+        "permalink": "/courses/how-to-scrape-any-website-in-9-minutes-seriously/",
+        "thumbnail": "https://i.ytimg.com/vi/-OqS2ol4VA8/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering"],
+        "tags": ["Make.com","Google Sheets","OpenAI","Web Scraping","Automation","AI"]
+    },
+    {
+        "title": "Automate Your Social Media with AI: Create a Self-Posting AI Clone!",
+        "description": "Learn how to build an AI clone that automatically posts fresh, relevant content to your social media daily, without lifting a finger.  This video demonstrates a complete automation workflow using various AI tools.",
+        "permalink": "/courses/i-made-myself-an-ai-clone-that-creates-talking-videos-for-me/",
+        "thumbnail": "https://i.ytimg.com/vi/iKgdqNCOlkc/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Generative AI"],
+        "tags": ["AI Automation","Social Media","Automation Workflow","Make","ElevenLabs","Airshare","Airtable","Hyenah","Prompt Engineering","API"]
+    },
+    {
+        "title": "Automating UI Testing with AI and the Model Context Protocol (mCP)",
+        "description": "Learn how to automate UI testing using AI and the Model Context Protocol (mCP), bridging the gap between AI and local data for efficient testing.",
+        "permalink": "/courses/is-this-the-future-of-ui-testing-puppeteer-+-claude-ais-mcp-/",
+        "thumbnail": "https://i.ytimg.com/vi/G6hedWv7vsE/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Testing"],
+        "tags": ["AI","mCP","Anthropic Claude","Puppeteer","UI Testing","Automation"]
+    },
+    {
+        "title": "Best Practices for Building AI-Powered Web Scrapers in 2024",
+        "description": "Learn how to build efficient and cost-effective web scrapers using large language models and agentic systems.  This video covers scraping simple and complex websites, handling various web interactions, and automating workflows.",
+        "permalink": "/courses/this-is-how-i-scrape-99-websites-via-llm/",
+        "thumbnail": "https://i.ytimg.com/vi/7kbQnLN2y_I/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Web Scraping"],
+        "tags": ["OpenAI","LangChain","Playwright","Selenium","AgentQL","Web Scraping","AI Automation","Upwork"]
+    },
+    {
+        "title": "Build a Free Local RAG Chatbot with Llama 3.2 and Flowise",
+        "description": "Learn how to create a local RAG chatbot using the Llama 3.2 model and the Flowise platform.  This chatbot can access and understand your personal knowledge base.",
+        "permalink": "/courses/build-a-free-ai-chatbot-with-llama-3.2--flowiseai-no-code/",
+        "thumbnail": "https://i.ytimg.com/vi/lJOZiRoZNJw/sddefault.jpg",
+        "categories": ["LLM","Prompt Engineering","Automation"],
+        "tags": ["Llama 3.2","Meta","Flowise","RAG","Chatbot","Local AI","Open Source"]
+    },
+    {
+        "title": "Build a Full Stack Email Autoresponder with a Superbase Vector Store",
+        "description": "Learn to build a full-stack email autoresponder application using Superbase, Next.js, and OpenAI embeddings for efficient data retrieval and question answering.",
+        "permalink": "/courses/supabase-postgres-vector-db-crash-course/",
+        "thumbnail": "https://i.ytimg.com/vi/cyPZsbO5i5U/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Coding","Database"],
+        "tags": ["Superbase","Next.js","OpenAI","Embeddings","Vector Store","RAG","SQL","PostgreSQL","AI","ChatGPT"]
+    },
+    {
+        "title": "Build a Local Chatbot with Llama OCR, Multimodal RAG, and a Local LLM",
+        "description": "Learn to create a powerful, local chatbot using Llama OCR for visual data, multimodal RAG for efficient retrieval, and a local LLM for intelligent responses. This tutorial demonstrates building a chatbot for business or personal use.",
+        "permalink": "/courses/llama-ocr-+-multimodal-rag-+-local-llm-python-project-easy-ai-chat-for-your-docs/",
+        "thumbnail": "https://i.ytimg.com/vi/A8D7YjaU0zE/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Coding"],
+        "tags": ["Llama","OCR","Multimodal RAG","LLM","Chatbot","OpenAI","Strategy"]
+    },
+    {
+        "title": "Build an AI Chatbot with N8N and Google Drive",
+        "description": "Learn how to build an AI-powered chatbot that answers questions using documents from your Google Drive, integrated with a website using N8N.",
+        "permalink": "/courses/step-by-step-tutorial-create-a-rag-chatbot-with-n8n-ai-agents-in-minutes/",
+        "thumbnail": "https://i.ytimg.com/vi/UeFi5oV9UpY/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering"],
+        "tags": ["N8N","AI Agent","Google Drive","Pinecone","OpenAI","Chatbot","RAG","Embedding","Vector Database","Workflow Automation"]
+    },
+    {
+        "title": "Build an E-commerce Chatbot with Chatling (No-Code)",
+        "description": "Learn to build a powerful e-commerce chatbot without writing any code using Chatling's no-code platform. This chatbot will handle product inquiries, order tracking, returns, and more.",
+        "permalink": "/courses/build-an-ai-store-assistant-in-30-minutes-no-code-/",
+        "thumbnail": "https://i.ytimg.com/vi/PBLb3a1iUZ8/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering"],
+        "tags": ["Chatling","No-Code","E-commerce","Chatbot","Automation"]
+    },
+    {
+        "title": "Build and Deploy a Landing Page with No Code using AutoDev",
+        "description": "Learn how to create and deploy a fully functional landing page with a contact form using AutoDev, a no-code platform.",
+        "permalink": "/courses/how-to-build-unlimited-apps-with-bolt.new-/",
+        "thumbnail": "https://i.ytimg.com/vi/QQw47XzcKRQ/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering"],
+        "tags": ["AutoDev","No-Code","Landing Page","Contact Form","Deployment","GitHub","CloudStation"]
+    },
+    {
+        "title": "Build Your Own Voice AI Assistant with n8n",
+        "description": "Learn how to build a personalized voice AI assistant for your website using n8n, a free open-source automation tool. This tutorial covers integrating Google Drive, Pinecone Vector Database, and OpenAI to handle voice queries and generate responses.",
+        "permalink": "/courses/build-your-own-rag-ai-voice-agent-with-n8n--complete-step-by-step-tutorial/",
+        "thumbnail": "https://i.ytimg.com/vi/NB7hMj7pfrA/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Coding"],
+        "tags": ["n8n","OpenAI","Google Drive","Pinecone","Voice AI","Workflow Automation","AI Agent","Langchain"]
+    },
+    {
+        "title": "Building AI Agents with Long-Term Memory",
+        "description": "Explore techniques for building AI agents capable of learning from past interactions and retaining user preferences using long-term memory.",
+        "permalink": "/courses/unlock-ai-agent-real-power-long-term-memory--self-improving/",
+        "thumbnail": "https://i.ytimg.com/vi/7LWTZqksmSg/sddefault.jpg",
+        "categories": ["Agent Development","Prompt Engineering","Memory Management"],
+        "tags": ["AI Agents","Long-Term Memory","AutoGen","Large Language Models","Vector Databases","Chroma"]
+    },
+    {
+        "title": "Building Your Own Native Model Context Protocol Application",
+        "description": "Learn how to build a native Model Context Protocol application that connects to LLMs hosted on various platforms like Llama and OpenAI.",
+        "permalink": "/courses/anthropic-mcp-with-ollama-no-claude-watch-this/",
+        "thumbnail": "https://i.ytimg.com/vi/9mciRwpcLNY/sddefault.jpg",
+        "categories": ["LLM Integration","Prompt Engineering","Coding"],
+        "tags": ["Model Context Protocol","Anthropic","OpenAI","Llama","Function Calling","JSON-RPC","CLI"]
+    },
+    {
+        "title": "Cursor AI Agent: Build a Full-Stack Web App from Scratch!",
+        "description": "Learn how to use the Cursor AI agent to build a full-stack web app combining Voiceflow and Twilio, even with no prior AI agent experience.",
+        "permalink": "/courses/how-to-use-cursor-agent-for-beginners/",
+        "thumbnail": "https://i.ytimg.com/vi/2gBcO3ht0ws/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Coding"],
+        "tags": ["Cursor","AI Agent","Voiceflow","Twilio","Prompt Engineering","Full-Stack Development","Next.js"]
+    },
+    {
+        "title": "Fine-tuning Large Language Models with Parameter-Efficient Methods and Hybrid RAG",
+        "description": "A comprehensive guide to fine-tuning LLMs using parameter-efficient techniques like LoRA and QLoRA, and integrating them with Hybrid RAG for improved performance.",
+        "permalink": "/courses/hybrid-rag-+-fine-tuning-your-own-dataset-python-project-easy-ai-chat-for-your-docs/",
+        "thumbnail": "https://i.ytimg.com/vi/Uq-1gLJxrBc/sddefault.jpg",
+        "categories": ["Prompt Engineering","Fine-tuning","LLM","Model Optimization"],
+        "tags": ["LLM","Fine-tuning","LoRA","QLoRA","RAG","Hybrid RAG","Unsloth","Parameter Efficiency","Model Evaluation","G-Eval","BLEURT"]
+    },
+    {
+        "title": "Fine-tuning Large Language Models with UNSLOth: A Comprehensive Guide",
+        "description": "Learn how to fine-tune large language models using UNSLOth, a parameter-efficient method, and improve model performance with hybrid RAG techniques.",
+        "permalink": "/courses/hybrid-rag-+-fine-tuning-your-own-dataset-python-project-easy-ai-chat-for-your-docs-1/",
+        "thumbnail": "https://i.ytimg.com/vi/Uq-1gLJxrBc/sddefault.jpg",
+        "categories": ["Prompt Engineering","Model Fine-tuning","LLM Optimization"],
+        "tags": ["LLM","Fine-tuning","UNSLOth","LoRA","QLoRA","RAG","Hybrid RAG","Open-source","Model Evaluation"]
+    },
+    {
+        "title": "Flowise APIs: Integrate Chat Flows into Custom Applications",
+        "description": "Learn how to integrate Flowise chat flows into custom applications and platforms using their API endpoints. This video covers using Postman to test the APIs, overriding values, RAG chat flows, and handling conversation chains.",
+        "permalink": "/courses/add-flowise-to-anything-flowise-api-crash-course/",
+        "thumbnail": "https://i.ytimg.com/vi/9R5zo3IVkqU/default.jpg",
+        "categories": ["API Integration","Prompt Engineering","Automation"],
+        "tags": ["Flowise","API","Postman","Integration","RAG","Chatbots"]
+    },
+    {
+        "title": "How to Add Your Own Knowledge Files and Documents to a Large Language Model",
+        "description": "Learn how to add your own knowledge files and documents to large language models (LLMs), both locally and online. We'll explore different methods like retraining, RAG, and context window uploading.",
+        "permalink": "/courses/feed-your-own-documents-to-a-local-large-language-model/",
+        "thumbnail": "https://i.ytimg.com/vi/fFgyOucIFuk/sddefault.jpg",
+        "categories": ["Prompt Engineering","Automation"],
+        "tags": ["OpenAI","ChatGPT","Llama","RAG","Context Window","LLM"]
+    },
+    {
+        "title": "Light RAG: Simple and Fast Retrieval Augmented Generation",
+        "description": "A comprehensive guide to Light RAG, a new retrieval augmented generation method for efficient and cost-effective document querying.",
+        "permalink": "/courses/lightrag-a-more-efficient-solution-than-graphrag-for-rag-systems/",
+        "thumbnail": "https://i.ytimg.com/vi/oageL-1I0GE/sddefault.jpg",
+        "categories": ["Retrieval Augmented Generation","Prompt Engineering","Large Language Models"],
+        "tags": ["Light RAG","Graph RAG","OpenAI","GPT-4","LLM","Knowledge Graph","Retrieval","Vector Database","Cost-Effective"]
+    },
+    {
+        "title": "Long and Light RAG: Enhancing LLMs with Scientific Literature",
+        "description": "A deep dive into Long RAG and Light RAG, two state-of-the-art frameworks that enhance LLMs by integrating external knowledge during response generation.",
+        "permalink": "/courses/lightrag--longrag-explained-cutting-edge-rag-techniques-in-ai/",
+        "thumbnail": "https://i.ytimg.com/vi/VGvsWCrpxy4/sddefault.jpg",
+        "categories": ["Retrieval Augmented Generation","Large Language Models","NLP"],
+        "tags": ["RAG","Long RAG","Light RAG","LLMs","NLP","Knowledge Retrieval","Benchmarking"]
+    },
+    {
+        "title": "Memorizing RAG: Next-Generation Retrieval Augmented Generation",
+        "description": "Learn about Memor RAG, a next-generation retrieval augmented generation framework that uses long-term memory for enhanced knowledge processing and complex task handling.",
+        "permalink": "/courses/i-want-rag-to-remember-everything-about-my-private-knowledge-locally---heres-how./",
+        "thumbnail": "https://i.ytimg.com/vi/Nr3XWcGzeSg/sddefault.jpg",
+        "categories": ["Retrieval Augmented Generation","Large Language Models","AI Automation"],
+        "tags": ["RAG","LLM","Memor RAG","Retrieval","Long-Term Memory","Question Answering","Summarization","Python","Hugging Face"]
+    },
+    {
+        "title": "Open Web UI Update: Knowledge Bases \u0026 Embedding Models",
+        "description": "Exploring the new features in Open Web UI, focusing on knowledge base management and embedding model configuration for improved search.",
+        "permalink": "/courses/open-webui-rag-knowledge-sentence-transformers-embeddings-models-re-ranking-models/",
+        "thumbnail": "https://i.ytimg.com/vi/5Lpd2o1TM7A/sddefault.jpg",
+        "categories": ["Prompt Engineering","Automation"],
+        "tags": ["OpenAI","Open Web UI","Embedding Models","Knowledge Base","Vector Databases","Sentence Transformers"]
+    },
+    {
+        "title": "Powerful Chatbot with Browser Use, Light RAG, and Local LLMs",
+        "description": "A quick tutorial demonstrating how to create a powerful chatbot using Browser Use, Light RAG, and a local large language model (LLM) for web scraping and data querying.",
+        "permalink": "/courses/browser-use-+--lightrag-agent-that-can-scrape-99-websites-with-llm/",
+        "thumbnail": "https://i.ytimg.com/vi/ehMdktyQgEk/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Coding"],
+        "tags": ["OpenAI","LLM","Web Scraping","Light RAG","Browser Use","Chatbot"]
+    },
+    {
+        "title": "Pydantic AI: A New LLM Library",
+        "description": "An overview of Pydantic AI, a new LLM library built on top of Pydantic, focusing on its features, ease of use, and comparison with other frameworks like LangChain.",
+        "permalink": "/courses/pydantic-ai---the-new-agent-builder-on-the-block/",
+        "thumbnail": "https://i.ytimg.com/vi/UnH7S5044GA/sddefault.jpg",
+        "categories": ["LLM Frameworks","Python","Prompt Engineering"],
+        "tags": ["Pydantic AI","LangChain","LLM","OpenAI","Gemini","Grok","Anthropic","Python","Agent Frameworks","Function Calling","Structured Output","Tool Use","RAG"]
+    },
+    {
+        "title": "Pydantic AI: A Python Agent Framework for Generative AI",
+        "description": "An overview of Pydantic AI, a new Python agent framework built on top of the popular Pydantic library, designed for building production-grade applications with generative AI.",
+        "permalink": "/courses/maybe-you-can-build-production-grade-ai-agents/",
+        "thumbnail": "https://i.ytimg.com/vi/hoIy26Rlk5s/sddefault.jpg",
+        "categories": ["Agent Frameworks","Prompt Engineering","LLMs"],
+        "tags": ["Pydantic","AI Agents","Generative AI","OpenAI","Anthropic","LLMs","Python","Production Grade Applications"]
+    },
+    {
+        "title": "Save Thousands on Make.com: Airtable Automation Strategies",
+        "description": "Learn how to build cost-effective automations using Airtable to significantly reduce your Make.com subscription expenses.  This video demonstrates three different approaches to processing data, comparing the efficiency and cost-effectiveness of each method.",
+        "permalink": "/courses/turn-1000s-of-make.com-operations-into-1-airtable-automation/",
+        "thumbnail": "https://i.ytimg.com/vi/x-x5trLgcBc/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering"],
+        "tags": ["Make.com","Airtable","Automation","Cost Optimization","API","No-Code","Strategy"]
+    },
+    {
+        "title": "The Backwards AI Method: Generate $10,000+/Month with 10 Minutes of Work",
+        "description": "Discover the counterintuitive AI method that's quietly generating over $10,000 per month. Learn why traditional AI content is dead and how to replace it with a surprising 10-minute method.",
+        "permalink": "/courses/this-ai-made-me-10k-in-one-month/",
+        "thumbnail": "https://i.ytimg.com/vi/czjtDtUHhwM/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering","Video Marketing"],
+        "tags": ["AI","SEO","YouTube","Strategy","Video Marketing","Automation"]
+    },
+    {
+        "title": "VZ's Exciting New Website Cloning Feature and Updates!",
+        "description": "Learn about VZ's latest updates, including the URL to clone feature, built-in console logging, version control, and UI element selection for easier website customization.",
+        "permalink": "/courses/clone-any-website-instantly-new-v0-updates-you-need-to-see./",
+        "thumbnail": "https://i.ytimg.com/vi/gNgxnECvLWM/sddefault.jpg",
+        "categories": ["Web Development","Automation"],
+        "tags": ["VZ","Website Cloning","Web Development Tools","Automation","Version Control","Debugging"]
+    },
+    {
+        "title": "Windsurf AI: Build a Game in Minutes!",
+        "description": "Learn to use Windsurf AI to quickly build a game similar to Chrome's offline dinosaur game. This tutorial covers setup, coding, and deployment.",
+        "permalink": "/courses/how-to-use-windsurf-editor-for-beginners/",
+        "thumbnail": "https://i.ytimg.com/vi/ZEqSuggBKo8/sddefault.jpg",
+        "categories": ["Prompt Engineering","Coding","Automation"],
+        "tags": ["Windsurf","AI","Coding","Game Development","Prompt Engineering","React"]
+    },
+    {
+        "title": "Automating AI Generated Videos",
+        "description": "Learn how to automate AI-generated videos using Airtable and Make.com for creating customized avatars.",
+        "permalink": "/courses/fully-automate-your-videos-with-ai-heygen-make.com--airtable/",
+        "thumbnail": "https://i.ytimg.com/vi/iV4spTCitao/sddefault.jpg",
+        "categories": ["Automation","Prompt Engineering"],
+        "tags": ["OpenAI","Video Generation","Automation"]
+    }]

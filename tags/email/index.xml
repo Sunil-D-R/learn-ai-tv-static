@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Email on LMS Platform</title>
+    <link>/tags/email/</link>
+    <description>Recent content in Email on LMS Platform</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scrape, Analyze, and Personalize: A Comprehensive Workflow</title>
+      <link>/courses/scrape-analyze-and-personalize-a-comprehensive-workflow/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/courses/scrape-analyze-and-personalize-a-comprehensive-workflow/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

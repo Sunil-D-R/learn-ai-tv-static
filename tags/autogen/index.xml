@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AutoGen on LMS Platform</title>
+    <link>/tags/autogen/</link>
+    <description>Recent content in AutoGen on LMS Platform</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/autogen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building AI Agents with Long-Term Memory</title>
+      <link>/courses/unlock-ai-agent-real-power-long-term-memory--self-improving/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>/courses/unlock-ai-agent-real-power-long-term-memory--self-improving/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
