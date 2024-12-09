@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Agent Development on Learn AI TV</title><link>https://learnaitv.com/categories/agent-development/</link><description>Recent content in Agent Development on Learn AI TV</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://learnaitv.com/categories/agent-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Building AI Agents with Long-Term Memory</title><link>https://learnaitv.com/courses/unlock-ai-agent-real-power-long-term-memory--self-improving/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/unlock-ai-agent-real-power-long-term-memory--self-improving/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agent Development on Learn AI TV</title>
+    <link>http://localhost:55613/categories/agent-development/</link>
+    <description>Recent content in Agent Development on Learn AI TV</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:55613/categories/agent-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>B Agent Framework: Build Scalable Agentic Applications</title>
+      <link>http://localhost:55613/courses/bee-agent-framework-build-ai-agents-fast-/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:55613/courses/bee-agent-framework-build-ai-agents-fast-/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
