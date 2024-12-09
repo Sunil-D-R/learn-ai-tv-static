@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Difficulties on LMS Platform</title>
-    <link>/difficulties/</link>
-    <description>Recent content in Difficulties on LMS Platform</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="/difficulties/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Difficulties on Learn AI TV</title><link>https://learnaitv.com/difficulties/</link><description>Recent content in Difficulties on Learn AI TV</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://learnaitv.com/difficulties/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
