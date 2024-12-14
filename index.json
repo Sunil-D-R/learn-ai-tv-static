@@ -440,12 +440,28 @@
         "tags": ["Windsurf","AI","Coding","Game Development","Prompt Engineering","React"]
     },
     {
+        "title": "Building AI Agents Part 2: App Tools",
+        "description": "Learn how to set up app AI tools for your AI agents, add guard rails, and build a Gmail draft writing assistant.",
+        "permalink": "https://learnaitv.com/courses/building-ai-agents-ai-app-tools-and-guardrails-explained-gmail-draft-agent-part-2/",
+        "thumbnail": "https://i.ytimg.com/vi/lkudvrC3AOU/sddefault.jpg",
+        "categories": ["AI Agents","Automation \u0026 Workflows"],
+        "tags": ["AI Agents","Automation","Gmail","n8n","Tooling"]
+    },
+    {
         "title": "From LLMs to Compound AI Systems: A Shift in Perspective",
         "description": "This video explores the shift from focusing on individual large language models (LLMs) to understanding AI as compound systems.  It emphasizes the importance of prompt engineering, sampling methods, and tool access in building effective and safe AI solutions.",
         "permalink": "https://learnaitv.com/courses/stanford-webinar---large-language-models-get-the-hype-but-compound-systems-are-the-future-of-ai/",
         "thumbnail": "https://i.ytimg.com/vi/vRTcE19M-KE/sddefault.jpg",
         "categories": ["Content Generation \u0026 Marketing","Prompt Engineering"],
         "tags": ["Large Language Models","LLMs","Prompt Engineering","AI Systems","Compound AI","Generative AI","Safety","Regulation","DSP","Langchain"]
+    },
+    {
+        "title": "AI Client System: Personalized Emails \u0026 Communications",
+        "description": "Learn how to build an AI system that creates unique, dynamic emails and communications for each customer, based on their individual data.",
+        "permalink": "https://learnaitv.com/courses/steal-this-ai-client-intelligence-system...-wow/",
+        "thumbnail": "https://i.ytimg.com/vi/XE2JWDQZfi0/sddefault.jpg",
+        "categories": ["Automation \u0026 Workflows","AI Agents","RAG \u0026 Knowledge Management"],
+        "tags": ["AI","Automation","Email Marketing","Personalization","No-code","RAG","Pinecone","Make"]
     },
     {
         "title": "Automating AI Generated Videos",
