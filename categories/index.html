@@ -1,1264 +1,237 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories - Learn AI TV</title>
-    <link href="/css/main.css" rel="stylesheet">
-    
-    
-    <link rel="icon" type="image/png" href="https://learnaitv.com/images/favicon.png">
-    
-    
-    <script src="https://unpkg.com/alpinejs" defer></script>
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    
-    
-</head>
-<body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
-    <header x-data="{ isOpen: false }" class="bg-white shadow relative">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between md:h-16">
-            
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="/" class="text-xl font-bold text-gray-900">
-                        
-                            Learn AI TV
-                        
-                    </a>
-                </div>
-
-                
-                <div class="hidden md:ml-6 md:flex md:space-x-8">
-                    
-                        <a href="/" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-primary-600">
-                            Home
-                        </a>
-                    
-                        <a href="/about/" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-primary-600">
-                            About
-                        </a>
-                    
-                    <div class="relative group">
-                        <button class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-primary-600">
-                            Categories
-                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                        </button>
-                        <div class="hidden group-hover:block absolute left-0 mt-0 w-64 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
-                            <div class="py-2 max-h-96 overflow-y-auto">
-                                
-                                <a href="/categories/ai-agents" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ai agents (24)
-                                </a>
-                                
-                                <a href="/categories/automation-workflows" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    automation &amp; workflows (25)
-                                </a>
-                                
-                                <a href="/categories/content-generation-marketing" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    content generation &amp; marketing (13)
-                                </a>
-                                
-                                <a href="/categories/development" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    development (32)
-                                </a>
-                                
-                                <a href="/categories/prompt-engineering" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    prompt engineering (7)
-                                </a>
-                                
-                                <a href="/categories/rag-knowledge-management" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    rag &amp; knowledge management (19)
-                                </a>
-                                
-                                <div class="my-2 border-t border-gray-200"></div>
-                                
-                                <a href="/tags/11-labs/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    11 labs (1)
-                                </a>
-                                
-                                <a href="/tags/agent-framework/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    agent framework (1)
-                                </a>
-                                
-                                <a href="/tags/agent-frameworks/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    agent frameworks (1)
-                                </a>
-                                
-                                <a href="/tags/agentic-ai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    agentic ai (1)
-                                </a>
-                                
-                                <a href="/tags/agentic-applications/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    agentic applications (1)
-                                </a>
-                                
-                                <a href="/tags/agentql/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    agentql (1)
-                                </a>
-                                
-                                <a href="/tags/ai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ai (16)
-                                </a>
-                                
-                                <a href="/tags/ai-agent/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ai agent (4)
-                                </a>
-                                
-                                <a href="/tags/ai-agents/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ai agents (4)
-                                </a>
-                                
-                                <a href="/tags/ai-applications/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ai applications (1)
-                                </a>
-                                
-                                <a href="/tags/ai-automation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ai automation (2)
-                                </a>
-                                
-                                <a href="/tags/ai-course-creation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ai course creation (1)
-                                </a>
-                                
-                                <a href="/tags/ai-dashboards/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ai dashboards (1)
-                                </a>
-                                
-                                <a href="/tags/ai-systems/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ai systems (1)
-                                </a>
-                                
-                                <a href="/tags/airshare/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    airshare (1)
-                                </a>
-                                
-                                <a href="/tags/airtable/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    airtable (3)
-                                </a>
-                                
-                                <a href="/tags/anthropic/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    anthropic (5)
-                                </a>
-                                
-                                <a href="/tags/anthropic-claude/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    anthropic claude (1)
-                                </a>
-                                
-                                <a href="/tags/api/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    api (3)
-                                </a>
-                                
-                                <a href="/tags/app-development/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    app development (1)
-                                </a>
-                                
-                                <a href="/tags/article-generation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    article generation (1)
-                                </a>
-                                
-                                <a href="/tags/autodev/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    autodev (1)
-                                </a>
-                                
-                                <a href="/tags/autogen/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    autogen (1)
-                                </a>
-                                
-                                <a href="/tags/automation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    automation (19)
-                                </a>
-                                
-                                <a href="/tags/automation-workflow/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    automation workflow (1)
-                                </a>
-                                
-                                <a href="/tags/b-agent-framework/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    b agent framework (1)
-                                </a>
-                                
-                                <a href="/tags/benchmarking/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    benchmarking (1)
-                                </a>
-                                
-                                <a href="/tags/bleurt/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    bleurt (1)
-                                </a>
-                                
-                                <a href="/tags/blockchain/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    blockchain (1)
-                                </a>
-                                
-                                <a href="/tags/bolt.new/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    bolt.new (1)
-                                </a>
-                                
-                                <a href="/tags/browser-use/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    browser use (1)
-                                </a>
-                                
-                                <a href="/tags/bubble/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    bubble (1)
-                                </a>
-                                
-                                <a href="/tags/business/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    business (1)
-                                </a>
-                                
-                                <a href="/tags/chatbot/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    chatbot (5)
-                                </a>
-                                
-                                <a href="/tags/chatbots/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    chatbots (2)
-                                </a>
-                                
-                                <a href="/tags/chatgpt/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    chatgpt (4)
-                                </a>
-                                
-                                <a href="/tags/chatling/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    chatling (1)
-                                </a>
-                                
-                                <a href="/tags/chibi/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    chibi (1)
-                                </a>
-                                
-                                <a href="/tags/chroma/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    chroma (1)
-                                </a>
-                                
-                                <a href="/tags/claude/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    claude (4)
-                                </a>
-                                
-                                <a href="/tags/cli/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    cli (1)
-                                </a>
-                                
-                                <a href="/tags/cloudstation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    cloudstation (1)
-                                </a>
-                                
-                                <a href="/tags/codex/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    codex (1)
-                                </a>
-                                
-                                <a href="/tags/coding/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    coding (2)
-                                </a>
-                                
-                                <a href="/tags/compound-ai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    compound ai (1)
-                                </a>
-                                
-                                <a href="/tags/contact-form/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    contact form (1)
-                                </a>
-                                
-                                <a href="/tags/content-strategy/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    content strategy (1)
-                                </a>
-                                
-                                <a href="/tags/context/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    context (1)
-                                </a>
-                                
-                                <a href="/tags/context-window/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    context window (1)
-                                </a>
-                                
-                                <a href="/tags/cost-optimization/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    cost optimization (1)
-                                </a>
-                                
-                                <a href="/tags/cost-effective/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    cost-effective (1)
-                                </a>
-                                
-                                <a href="/tags/cursor/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    cursor (1)
-                                </a>
-                                
-                                <a href="/tags/data-extraction/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    data extraction (1)
-                                </a>
-                                
-                                <a href="/tags/debugging/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    debugging (1)
-                                </a>
-                                
-                                <a href="/tags/deep-learning/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    deep learning (1)
-                                </a>
-                                
-                                <a href="/tags/dependency-injection/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    dependency injection (1)
-                                </a>
-                                
-                                <a href="/tags/deployment/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    deployment (1)
-                                </a>
-                                
-                                <a href="/tags/dsp/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    dsp (1)
-                                </a>
-                                
-                                <a href="/tags/e-commerce/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    e-commerce (1)
-                                </a>
-                                
-                                <a href="/tags/elevenlabs/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    elevenlabs (1)
-                                </a>
-                                
-                                <a href="/tags/email/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    email (1)
-                                </a>
-                                
-                                <a href="/tags/email-marketing/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    email marketing (3)
-                                </a>
-                                
-                                <a href="/tags/embedding/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    embedding (1)
-                                </a>
-                                
-                                <a href="/tags/embedding-models/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    embedding models (1)
-                                </a>
-                                
-                                <a href="/tags/embeddings/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    embeddings (1)
-                                </a>
-                                
-                                <a href="/tags/fine-tuning/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    fine-tuning (2)
-                                </a>
-                                
-                                <a href="/tags/flowise/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    flowise (3)
-                                </a>
-                                
-                                <a href="/tags/full-stack/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    full-stack (1)
-                                </a>
-                                
-                                <a href="/tags/full-stack-development/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    full-stack development (1)
-                                </a>
-                                
-                                <a href="/tags/function-calling/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    function calling (2)
-                                </a>
-                                
-                                <a href="/tags/future-of-work/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    future of work (1)
-                                </a>
-                                
-                                <a href="/tags/g-eval/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    g-eval (1)
-                                </a>
-                                
-                                <a href="/tags/game-development/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    game development (1)
-                                </a>
-                                
-                                <a href="/tags/gemini/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    gemini (1)
-                                </a>
-                                
-                                <a href="/tags/generative-ai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    generative ai (4)
-                                </a>
-                                
-                                <a href="/tags/github/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    github (2)
-                                </a>
-                                
-                                <a href="/tags/gmail/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    gmail (2)
-                                </a>
-                                
-                                <a href="/tags/google-ai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    google ai (1)
-                                </a>
-                                
-                                <a href="/tags/google-drive/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    google drive (2)
-                                </a>
-                                
-                                <a href="/tags/google-search-console/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    google search console (1)
-                                </a>
-                                
-                                <a href="/tags/google-sheets/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    google sheets (1)
-                                </a>
-                                
-                                <a href="/tags/gpt-4/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    gpt-4 (2)
-                                </a>
-                                
-                                <a href="/tags/graph-rag/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    graph rag (1)
-                                </a>
-                                
-                                <a href="/tags/grok/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    grok (2)
-                                </a>
-                                
-                                <a href="/tags/high-ticket-sales/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    high-ticket sales (1)
-                                </a>
-                                
-                                <a href="/tags/hugging-face/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    hugging face (2)
-                                </a>
-                                
-                                <a href="/tags/hybrid-rag/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    hybrid rag (2)
-                                </a>
-                                
-                                <a href="/tags/hyenah/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    hyenah (1)
-                                </a>
-                                
-                                <a href="/tags/ibm-research/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ibm research (1)
-                                </a>
-                                
-                                <a href="/tags/integration/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    integration (1)
-                                </a>
-                                
-                                <a href="/tags/javascript/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    javascript (1)
-                                </a>
-                                
-                                <a href="/tags/json-schema/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    json schema (1)
-                                </a>
-                                
-                                <a href="/tags/json-rpc/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    json-rpc (1)
-                                </a>
-                                
-                                <a href="/tags/knowledge-base/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    knowledge base (1)
-                                </a>
-                                
-                                <a href="/tags/knowledge-graph/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    knowledge graph (1)
-                                </a>
-                                
-                                <a href="/tags/knowledge-retrieval/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    knowledge retrieval (1)
-                                </a>
-                                
-                                <a href="/tags/landing-page/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    landing page (1)
-                                </a>
-                                
-                                <a href="/tags/langchain/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    langchain (6)
-                                </a>
-                                
-                                <a href="/tags/large-language-models/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    large language models (4)
-                                </a>
-                                
-                                <a href="/tags/lead-generation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    lead generation (1)
-                                </a>
-                                
-                                <a href="/tags/learning-in-public/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    learning in public (1)
-                                </a>
-                                
-                                <a href="/tags/light-rag/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    light rag (3)
-                                </a>
-                                
-                                <a href="/tags/llama/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    llama (3)
-                                </a>
-                                
-                                <a href="/tags/llama-2/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    llama 2 (1)
-                                </a>
-                                
-                                <a href="/tags/llama-3.2/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    llama 3.2 (1)
-                                </a>
-                                
-                                <a href="/tags/llc/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    llc (1)
-                                </a>
-                                
-                                <a href="/tags/llm/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    llm (9)
-                                </a>
-                                
-                                <a href="/tags/llms/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    llms (7)
-                                </a>
-                                
-                                <a href="/tags/local-ai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    local ai (1)
-                                </a>
-                                
-                                <a href="/tags/local-seo/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    local seo (1)
-                                </a>
-                                
-                                <a href="/tags/long-rag/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    long rag (1)
-                                </a>
-                                
-                                <a href="/tags/long-term-memory/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    long-term memory (2)
-                                </a>
-                                
-                                <a href="/tags/lora/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    lora (2)
-                                </a>
-                                
-                                <a href="/tags/lovable/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    lovable (1)
-                                </a>
-                                
-                                <a href="/tags/make/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    make (3)
-                                </a>
-                                
-                                <a href="/tags/make.com/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    make.com (3)
-                                </a>
-                                
-                                <a href="/tags/marketing/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    marketing (1)
-                                </a>
-                                
-                                <a href="/tags/mcp/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    mcp (2)
-                                </a>
-                                
-                                <a href="/tags/memor-rag/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    memor rag (1)
-                                </a>
-                                
-                                <a href="/tags/memory/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    memory (1)
-                                </a>
-                                
-                                <a href="/tags/meta/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    meta (1)
-                                </a>
-                                
-                                <a href="/tags/mistral/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    mistral (1)
-                                </a>
-                                
-                                <a href="/tags/model/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    model (1)
-                                </a>
-                                
-                                <a href="/tags/model-context-protocol/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    model context protocol (2)
-                                </a>
-                                
-                                <a href="/tags/model-evaluation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    model evaluation (2)
-                                </a>
-                                
-                                <a href="/tags/multimodal-rag/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    multimodal rag (1)
-                                </a>
-                                
-                                <a href="/tags/n8n/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    n8n (6)
-                                </a>
-                                
-                                <a href="/tags/neural-networks/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    neural networks (1)
-                                </a>
-                                
-                                <a href="/tags/next.js/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    next.js (3)
-                                </a>
-                                
-                                <a href="/tags/nlp/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    nlp (1)
-                                </a>
-                                
-                                <a href="/tags/no-code/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    no-code (6)
-                                </a>
-                                
-                                <a href="/tags/ocr/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ocr (1)
-                                </a>
-                                
-                                <a href="/tags/odoo/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    odoo (1)
-                                </a>
-                                
-                                <a href="/tags/olama/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    olama (1)
-                                </a>
-                                
-                                <a href="/tags/open-web-ui/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    open web ui (1)
-                                </a>
-                                
-                                <a href="/tags/open-source/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    open-source (2)
-                                </a>
-                                
-                                <a href="/tags/openai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    openai (23)
-                                </a>
-                                
-                                <a href="/tags/parameter-efficiency/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    parameter efficiency (1)
-                                </a>
-                                
-                                <a href="/tags/passive-income/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    passive income (1)
-                                </a>
-                                
-                                <a href="/tags/pentai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    pentai (1)
-                                </a>
-                                
-                                <a href="/tags/personalization/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    personalization (3)
-                                </a>
-                                
-                                <a href="/tags/pinecone/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    pinecone (3)
-                                </a>
-                                
-                                <a href="/tags/playwright/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    playwright (1)
-                                </a>
-                                
-                                <a href="/tags/postgresql/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    postgresql (1)
-                                </a>
-                                
-                                <a href="/tags/postman/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    postman (1)
-                                </a>
-                                
-                                <a href="/tags/production-grade-applications/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    production grade applications (1)
-                                </a>
-                                
-                                <a href="/tags/programmatic-seo/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    programmatic seo (1)
-                                </a>
-                                
-                                <a href="/tags/prompt-engineering/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    prompt engineering (13)
-                                </a>
-                                
-                                <a href="/tags/prompting/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    prompting (1)
-                                </a>
-                                
-                                <a href="/tags/puppeteer/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    puppeteer (1)
-                                </a>
-                                
-                                <a href="/tags/pydantic/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    pydantic (1)
-                                </a>
-                                
-                                <a href="/tags/pydantic-ai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    pydantic ai (1)
-                                </a>
-                                
-                                <a href="/tags/python/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    python (5)
-                                </a>
-                                
-                                <a href="/tags/qlora/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    qlora (2)
-                                </a>
-                                
-                                <a href="/tags/question-answering/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    question answering (1)
-                                </a>
-                                
-                                <a href="/tags/rag/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    rag (11)
-                                </a>
-                                
-                                <a href="/tags/react/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    react (1)
-                                </a>
-                                
-                                <a href="/tags/regulation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    regulation (1)
-                                </a>
-                                
-                                <a href="/tags/research-agent/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    research agent (1)
-                                </a>
-                                
-                                <a href="/tags/retrieval/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    retrieval (2)
-                                </a>
-                                
-                                <a href="/tags/safety/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    safety (1)
-                                </a>
-                                
-                                <a href="/tags/sales-strategy/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    sales strategy (1)
-                                </a>
-                                
-                                <a href="/tags/scalability/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    scalability (1)
-                                </a>
-                                
-                                <a href="/tags/selenium/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    selenium (1)
-                                </a>
-                                
-                                <a href="/tags/self-attention/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    self-attention (1)
-                                </a>
-                                
-                                <a href="/tags/sentence-transformers/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    sentence transformers (1)
-                                </a>
-                                
-                                <a href="/tags/seo/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    seo (3)
-                                </a>
-                                
-                                <a href="/tags/small-business/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    small business (1)
-                                </a>
-                                
-                                <a href="/tags/smart-contracts/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    smart contracts (1)
-                                </a>
-                                
-                                <a href="/tags/social-media/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    social media (1)
-                                </a>
-                                
-                                <a href="/tags/sql/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    sql (1)
-                                </a>
-                                
-                                <a href="/tags/strategy/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    strategy (6)
-                                </a>
-                                
-                                <a href="/tags/structured-output/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    structured output (2)
-                                </a>
-                                
-                                <a href="/tags/structured-outputs/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    structured outputs (1)
-                                </a>
-                                
-                                <a href="/tags/summarization/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    summarization (1)
-                                </a>
-                                
-                                <a href="/tags/superbase/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    superbase (3)
-                                </a>
-                                
-                                <a href="/tags/templates/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    templates (1)
-                                </a>
-                                
-                                <a href="/tags/tool-agents/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    tool agents (1)
-                                </a>
-                                
-                                <a href="/tags/tool-use/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    tool use (1)
-                                </a>
-                                
-                                <a href="/tags/tooling/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    tooling (1)
-                                </a>
-                                
-                                <a href="/tags/tools/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    tools (2)
-                                </a>
-                                
-                                <a href="/tags/traffic-generation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    traffic generation (1)
-                                </a>
-                                
-                                <a href="/tags/transcript-generation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    transcript generation (1)
-                                </a>
-                                
-                                <a href="/tags/twilio/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    twilio (1)
-                                </a>
-                                
-                                <a href="/tags/typescript/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    typescript (1)
-                                </a>
-                                
-                                <a href="/tags/ui-testing/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ui testing (1)
-                                </a>
-                                
-                                <a href="/tags/ultra-learning/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    ultra learning (1)
-                                </a>
-                                
-                                <a href="/tags/unsloth/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    unsloth (2)
-                                </a>
-                                
-                                <a href="/tags/upwork/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    upwork (1)
-                                </a>
-                                
-                                <a href="/tags/vector-database/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    vector database (2)
-                                </a>
-                                
-                                <a href="/tags/vector-databases/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    vector databases (2)
-                                </a>
-                                
-                                <a href="/tags/vector-store/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    vector store (1)
-                                </a>
-                                
-                                <a href="/tags/version-control/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    version control (1)
-                                </a>
-                                
-                                <a href="/tags/video-generation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    video generation (1)
-                                </a>
-                                
-                                <a href="/tags/video-marketing/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    video marketing (1)
-                                </a>
-                                
-                                <a href="/tags/vision/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    vision (1)
-                                </a>
-                                
-                                <a href="/tags/voice-ai/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    voice ai (2)
-                                </a>
-                                
-                                <a href="/tags/voiceflow/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    voiceflow (1)
-                                </a>
-                                
-                                <a href="/tags/vz/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    vz (1)
-                                </a>
-                                
-                                <a href="/tags/web-application/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    web application (1)
-                                </a>
-                                
-                                <a href="/tags/web-development-tools/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    web development tools (1)
-                                </a>
-                                
-                                <a href="/tags/web-scraping/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    web scraping (6)
-                                </a>
-                                
-                                <a href="/tags/webhooks/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    webhooks (1)
-                                </a>
-                                
-                                <a href="/tags/website-cloning/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    website cloning (1)
-                                </a>
-                                
-                                <a href="/tags/website-development/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    website development (2)
-                                </a>
-                                
-                                <a href="/tags/whatsapp-api/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    whatsapp api (1)
-                                </a>
-                                
-                                <a href="/tags/wikipedia/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    wikipedia (1)
-                                </a>
-                                
-                                <a href="/tags/windsurf/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    windsurf (1)
-                                </a>
-                                
-                                <a href="/tags/word-embeddings/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    word embeddings (1)
-                                </a>
-                                
-                                <a href="/tags/workflow/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    workflow (3)
-                                </a>
-                                
-                                <a href="/tags/workflow-automation/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    workflow automation (3)
-                                </a>
-                                
-                                <a href="/tags/youtube/" class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">
-                                    youtube (2)
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="flex items-center md:hidden">
-                    <button @click="isOpen = !isOpen" type="button" 
-                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500" 
-                            aria-controls="mobile-menu" 
-                            :aria-expanded="isOpen">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            
-            <div class="block md:flex md:items-center md:justify-end md:ml-4 md:flex-grow md:max-w-2xl py-4 md:py-0">
-                <div class="w-full relative">
-                    <div class="relative">
-                        <input type="search" 
-                               class="w-full bg-gray-100 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white" 
-                               placeholder="Search courses..." 
-                               id="searchInput"
-                               autocomplete="off">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                                <path d="M6.25 6.25a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H6.25z" />
-                            </svg>
-                        </div>
-                    </div>
-                    
-                    <div id="searchResults" class="absolute w-full mt-1 bg-white rounded-lg shadow-lg border border-gray-200 divide-y divide-gray-200 hidden max-h-96 overflow-y-auto z-50">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    
-    <div x-show="isOpen" 
-         class="fixed inset-0 bg-gray-800 bg-opacity-75 z-40"
-         @click="isOpen = false"
-         style="display: none;"></div>
-
-    
-    <div x-show="isOpen" 
-         class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50 transform transition-all duration-300 ease-in-out"
-         x-transition:enter="transform transition ease-in-out duration-300"
-         x-transition:enter-start="-translate-x-full"
-         x-transition:enter-end="translate-x-0"
-         x-transition:leave="transform transition ease-in-out duration-300"
-         x-transition:leave-start="translate-x-0"
-         x-transition:leave-end="-translate-x-full"
-         style="display: none;">
-        
-        <div class="flex items-center justify-between p-4 border-b">
-            <h2 class="text-lg font-semibold">Menu</h2>
-            <button @click="isOpen = false" class="p-2 rounded-md hover:bg-gray-100">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
-
-        <nav class="px-4 py-4">
-            
-            <a href="/" class="block py-2 text-gray-600 hover:text-gray-900">Home</a>
-            
-            <a href="/about/" class="block py-2 text-gray-600 hover:text-gray-900">About</a>
-            
-        </nav>
-    </div>
-</header>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('searchInput');
-    const searchResults = document.getElementById('searchResults');
-    let searchIndex = [];
-
-    
-    fetch('\/index.json')
-        .then(response => response.json())
-        .then(data => {
-            searchIndex = data;
-        })
-        .catch(error => console.error('Error loading search index:', error));
-
-    
-    function performSearch(query) {
-        if (!query) {
-            searchResults.classList.add('hidden');
-            return;
-        }
-
-        const results = searchIndex.filter(item => 
-            item.title.toLowerCase().includes(query.toLowerCase()) ||
-            item.description.toLowerCase().includes(query.toLowerCase())
-        );
-
-        displayResults(results);
-    }
-
-    
-    function displayResults(results) {
-        if (results.length === 0) {
-            searchResults.innerHTML = '<div class="p-4 text-sm text-gray-500">No results found</div>';
-        } else {
-            searchResults.innerHTML = results.map(result => `
-                <a href="${result.permalink}" class="block p-4 hover:bg-gray-50">
-                    <div class="font-medium text-gray-900">${result.title}</div>
-                    <div class="text-sm text-gray-500">${result.description}</div>
+<!doctype html><html lang=en class=scroll-smooth><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Categories - Learn AI TV</title>
+<link href=/css/main.css rel=stylesheet><link rel=icon type=image/png href=https://learnaitv.com/images/favicon.png><script src=https://unpkg.com/alpinejs defer></script><script>tailwind.config={theme:{extend:{colors:{primary:{50:"#f0f9ff",100:"#e0f2fe",200:"#bae6fd",300:"#7dd3fc",400:"#38bdf8",500:"#0ea5e9",600:"#0284c7",700:"#0369a1",800:"#075985",900:"#0c4a6e"}}}}}</script></head><body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col"><header x-data="{ isOpen: false }" class="bg-white shadow relative"><nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex flex-col md:flex-row justify-between md:h-16"><div class="flex justify-between items-center h-16"><div class="flex-shrink-0 flex items-center"><a href=/ class="text-xl font-bold text-gray-900">Learn AI TV</a></div><div class="hidden md:ml-6 md:flex md:space-x-8"><a href=/ class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-primary-600">Home
+</a><a href=/about/ class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-primary-600">About</a><div class="relative group"><button class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-primary-600">
+Categories<svg class="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414.0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414.0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></button><div class="hidden group-hover:block absolute left-0 mt-0 w-64 bg-white rounded-lg shadow-lg border border-gray-200 z-50"><div class="py-2 max-h-96 overflow-y-auto"><a href=/categories/ai-agents class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ai agents (25)
+</a><a href=/categories/automation-workflows class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">automation & workflows (25)
+</a><a href=/categories/content-generation-marketing class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">content generation & marketing (13)
+</a><a href=/categories/development class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">development (33)
+</a><a href=/categories/prompt-engineering class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">prompt engineering (7)
+</a><a href=/categories/rag-knowledge-management class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">rag & knowledge management (19)</a><div class="my-2 border-t border-gray-200"></div><a href=/tags/11-labs/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">11 labs (1)
+</a><a href=/tags/agent/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">agent (1)
+</a><a href=/tags/agent-framework/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">agent framework (1)
+</a><a href=/tags/agent-frameworks/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">agent frameworks (1)
+</a><a href=/tags/agentic-ai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">agentic ai (1)
+</a><a href=/tags/agentic-applications/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">agentic applications (1)
+</a><a href=/tags/agentql/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">agentql (1)
+</a><a href=/tags/ai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ai (16)
+</a><a href=/tags/ai-agent/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ai agent (4)
+</a><a href=/tags/ai-agents/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ai agents (4)
+</a><a href=/tags/ai-applications/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ai applications (1)
+</a><a href=/tags/ai-automation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ai automation (2)
+</a><a href=/tags/ai-course-creation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ai course creation (1)
+</a><a href=/tags/ai-dashboards/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ai dashboards (1)
+</a><a href=/tags/ai-systems/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ai systems (1)
+</a><a href=/tags/airshare/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">airshare (1)
+</a><a href=/tags/airtable/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">airtable (3)
+</a><a href=/tags/anthropic/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">anthropic (5)
+</a><a href=/tags/anthropic-claude/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">anthropic claude (1)
+</a><a href=/tags/api/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">api (3)
+</a><a href=/tags/app-development/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">app development (1)
+</a><a href=/tags/architecture/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">architecture (1)
+</a><a href=/tags/article-generation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">article generation (1)
+</a><a href=/tags/autodev/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">autodev (1)
+</a><a href=/tags/autogen/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">autogen (1)
+</a><a href=/tags/automation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">automation (19)
+</a><a href=/tags/automation-workflow/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">automation workflow (1)
+</a><a href=/tags/b-agent-framework/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">b agent framework (1)
+</a><a href=/tags/benchmarking/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">benchmarking (1)
+</a><a href=/tags/bleurt/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">bleurt (1)
+</a><a href=/tags/blockchain/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">blockchain (1)
+</a><a href=/tags/bolt.new/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">bolt.new (1)
+</a><a href=/tags/browser-use/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">browser use (1)
+</a><a href=/tags/bubble/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">bubble (1)
+</a><a href=/tags/business/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">business (1)
+</a><a href=/tags/chatbot/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">chatbot (5)
+</a><a href=/tags/chatbots/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">chatbots (2)
+</a><a href=/tags/chatgpt/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">chatgpt (4)
+</a><a href=/tags/chatling/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">chatling (1)
+</a><a href=/tags/chibi/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">chibi (1)
+</a><a href=/tags/chroma/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">chroma (1)
+</a><a href=/tags/claude/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">claude (4)
+</a><a href=/tags/cli/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">cli (1)
+</a><a href=/tags/cloudstation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">cloudstation (1)
+</a><a href=/tags/codex/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">codex (1)
+</a><a href=/tags/coding/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">coding (2)
+</a><a href=/tags/compound-ai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">compound ai (1)
+</a><a href=/tags/contact-form/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">contact form (1)
+</a><a href=/tags/content-strategy/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">content strategy (1)
+</a><a href=/tags/context/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">context (1)
+</a><a href=/tags/context-window/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">context window (1)
+</a><a href=/tags/cost-optimization/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">cost optimization (1)
+</a><a href=/tags/cost-effective/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">cost-effective (1)
+</a><a href=/tags/cursor/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">cursor (1)
+</a><a href=/tags/data-extraction/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">data extraction (1)
+</a><a href=/tags/debugging/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">debugging (1)
+</a><a href=/tags/deep-learning/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">deep learning (1)
+</a><a href=/tags/dependency-injection/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">dependency injection (1)
+</a><a href=/tags/deployment/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">deployment (1)
+</a><a href=/tags/dsp/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">dsp (1)
+</a><a href=/tags/e-commerce/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">e-commerce (1)
+</a><a href=/tags/elevenlabs/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">elevenlabs (1)
+</a><a href=/tags/email/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">email (1)
+</a><a href=/tags/email-marketing/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">email marketing (3)
+</a><a href=/tags/embedding/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">embedding (1)
+</a><a href=/tags/embedding-models/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">embedding models (1)
+</a><a href=/tags/embeddings/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">embeddings (1)
+</a><a href=/tags/fine-tuning/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">fine-tuning (2)
+</a><a href=/tags/flowise/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">flowise (3)
+</a><a href=/tags/full-stack/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">full-stack (1)
+</a><a href=/tags/full-stack-development/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">full-stack development (1)
+</a><a href=/tags/function-calling/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">function calling (2)
+</a><a href=/tags/future-of-work/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">future of work (1)
+</a><a href=/tags/g-eval/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">g-eval (1)
+</a><a href=/tags/game-development/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">game development (1)
+</a><a href=/tags/gemini/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">gemini (1)
+</a><a href=/tags/generative-ai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">generative ai (4)
+</a><a href=/tags/github/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">github (2)
+</a><a href=/tags/gmail/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">gmail (2)
+</a><a href=/tags/google-ai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">google ai (1)
+</a><a href=/tags/google-drive/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">google drive (2)
+</a><a href=/tags/google-search-console/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">google search console (1)
+</a><a href=/tags/google-sheets/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">google sheets (1)
+</a><a href=/tags/gpt-4/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">gpt-4 (2)
+</a><a href=/tags/graph-rag/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">graph rag (1)
+</a><a href=/tags/grok/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">grok (2)
+</a><a href=/tags/high-ticket-sales/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">high-ticket sales (1)
+</a><a href=/tags/hugging-face/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">hugging face (2)
+</a><a href=/tags/hybrid-rag/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">hybrid rag (2)
+</a><a href=/tags/hyenah/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">hyenah (1)
+</a><a href=/tags/ibm-research/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ibm research (1)
+</a><a href=/tags/integration/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">integration (1)
+</a><a href=/tags/javascript/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">javascript (1)
+</a><a href=/tags/json-schema/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">json schema (1)
+</a><a href=/tags/json-rpc/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">json-rpc (1)
+</a><a href=/tags/knowledge-base/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">knowledge base (1)
+</a><a href=/tags/knowledge-graph/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">knowledge graph (1)
+</a><a href=/tags/knowledge-retrieval/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">knowledge retrieval (1)
+</a><a href=/tags/landing-page/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">landing page (1)
+</a><a href=/tags/langchain/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">langchain (6)
+</a><a href=/tags/large-language-models/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">large language models (4)
+</a><a href=/tags/lead-generation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">lead generation (1)
+</a><a href=/tags/learning-in-public/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">learning in public (1)
+</a><a href=/tags/light-rag/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">light rag (3)
+</a><a href=/tags/llama/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">llama (3)
+</a><a href=/tags/llama-2/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">llama 2 (1)
+</a><a href=/tags/llama-3.2/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">llama 3.2 (1)
+</a><a href=/tags/llc/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">llc (1)
+</a><a href=/tags/llm/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">llm (9)
+</a><a href=/tags/llms/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">llms (7)
+</a><a href=/tags/local-ai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">local ai (1)
+</a><a href=/tags/local-seo/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">local seo (1)
+</a><a href=/tags/long-rag/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">long rag (1)
+</a><a href=/tags/long-term-memory/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">long-term memory (2)
+</a><a href=/tags/lora/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">lora (2)
+</a><a href=/tags/lovable/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">lovable (1)
+</a><a href=/tags/make/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">make (3)
+</a><a href=/tags/make.com/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">make.com (3)
+</a><a href=/tags/marketing/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">marketing (1)
+</a><a href=/tags/mcp/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">mcp (2)
+</a><a href=/tags/memor-rag/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">memor rag (1)
+</a><a href=/tags/memory/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">memory (1)
+</a><a href=/tags/meta/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">meta (1)
+</a><a href=/tags/mistral/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">mistral (1)
+</a><a href=/tags/model/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">model (1)
+</a><a href=/tags/model-context-protocol/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">model context protocol (2)
+</a><a href=/tags/model-evaluation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">model evaluation (2)
+</a><a href=/tags/multimodal-rag/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">multimodal rag (1)
+</a><a href=/tags/n8n/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">n8n (6)
+</a><a href=/tags/neural-networks/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">neural networks (1)
+</a><a href=/tags/next.js/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">next.js (3)
+</a><a href=/tags/nlp/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">nlp (1)
+</a><a href=/tags/no-code/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">no-code (6)
+</a><a href=/tags/ocr/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ocr (1)
+</a><a href=/tags/odoo/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">odoo (1)
+</a><a href=/tags/olama/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">olama (1)
+</a><a href=/tags/open-web-ui/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">open web ui (1)
+</a><a href=/tags/open-source/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">open-source (2)
+</a><a href=/tags/openai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">openai (24)
+</a><a href=/tags/parameter-efficiency/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">parameter efficiency (1)
+</a><a href=/tags/passive-income/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">passive income (1)
+</a><a href=/tags/pentai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">pentai (1)
+</a><a href=/tags/personalization/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">personalization (3)
+</a><a href=/tags/pinecone/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">pinecone (3)
+</a><a href=/tags/playwright/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">playwright (1)
+</a><a href=/tags/postgresql/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">postgresql (1)
+</a><a href=/tags/postman/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">postman (1)
+</a><a href=/tags/production-grade-applications/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">production grade applications (1)
+</a><a href=/tags/programmatic-seo/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">programmatic seo (1)
+</a><a href=/tags/prompt-engineering/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">prompt engineering (13)
+</a><a href=/tags/prompting/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">prompting (1)
+</a><a href=/tags/puppeteer/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">puppeteer (1)
+</a><a href=/tags/pydantic/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">pydantic (1)
+</a><a href=/tags/pydantic-ai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">pydantic ai (1)
+</a><a href=/tags/python/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">python (5)
+</a><a href=/tags/qlora/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">qlora (2)
+</a><a href=/tags/question-answering/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">question answering (1)
+</a><a href=/tags/rag/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">rag (11)
+</a><a href=/tags/react/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">react (1)
+</a><a href=/tags/regulation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">regulation (1)
+</a><a href=/tags/research-agent/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">research agent (1)
+</a><a href=/tags/retrieval/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">retrieval (2)
+</a><a href=/tags/safety/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">safety (1)
+</a><a href=/tags/sales-strategy/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">sales strategy (1)
+</a><a href=/tags/scalability/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">scalability (1)
+</a><a href=/tags/selenium/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">selenium (1)
+</a><a href=/tags/self-attention/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">self-attention (1)
+</a><a href=/tags/sentence-transformers/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">sentence transformers (1)
+</a><a href=/tags/seo/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">seo (3)
+</a><a href=/tags/small-business/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">small business (1)
+</a><a href=/tags/smart-contracts/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">smart contracts (1)
+</a><a href=/tags/social-media/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">social media (1)
+</a><a href=/tags/sql/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">sql (1)
+</a><a href=/tags/strategy/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">strategy (6)
+</a><a href=/tags/structured-output/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">structured output (2)
+</a><a href=/tags/structured-outputs/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">structured outputs (1)
+</a><a href=/tags/summarization/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">summarization (1)
+</a><a href=/tags/superbase/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">superbase (3)
+</a><a href=/tags/templates/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">templates (1)
+</a><a href=/tags/tool-agents/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">tool agents (1)
+</a><a href=/tags/tool-use/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">tool use (1)
+</a><a href=/tags/tooling/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">tooling (1)
+</a><a href=/tags/tools/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">tools (2)
+</a><a href=/tags/traffic-generation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">traffic generation (1)
+</a><a href=/tags/transcript-generation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">transcript generation (1)
+</a><a href=/tags/twilio/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">twilio (1)
+</a><a href=/tags/typescript/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">typescript (1)
+</a><a href=/tags/ui-testing/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ui testing (1)
+</a><a href=/tags/ultra-learning/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">ultra learning (1)
+</a><a href=/tags/unsloth/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">unsloth (2)
+</a><a href=/tags/upwork/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">upwork (1)
+</a><a href=/tags/vector-database/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">vector database (2)
+</a><a href=/tags/vector-databases/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">vector databases (2)
+</a><a href=/tags/vector-store/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">vector store (1)
+</a><a href=/tags/version-control/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">version control (1)
+</a><a href=/tags/vertex-ai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">vertex ai (1)
+</a><a href=/tags/video-generation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">video generation (1)
+</a><a href=/tags/video-marketing/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">video marketing (1)
+</a><a href=/tags/vision/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">vision (1)
+</a><a href=/tags/voice-ai/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">voice ai (2)
+</a><a href=/tags/voiceflow/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">voiceflow (1)
+</a><a href=/tags/vz/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">vz (1)
+</a><a href=/tags/web-application/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">web application (1)
+</a><a href=/tags/web-development-tools/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">web development tools (1)
+</a><a href=/tags/web-scraping/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">web scraping (6)
+</a><a href=/tags/webhooks/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">webhooks (1)
+</a><a href=/tags/website-cloning/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">website cloning (1)
+</a><a href=/tags/website-development/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">website development (2)
+</a><a href=/tags/whatsapp-api/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">whatsapp api (1)
+</a><a href=/tags/wikipedia/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">wikipedia (1)
+</a><a href=/tags/windsurf/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">windsurf (1)
+</a><a href=/tags/word-embeddings/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">word embeddings (1)
+</a><a href=/tags/workflow/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">workflow (3)
+</a><a href=/tags/workflow-automation/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">workflow automation (3)
+</a><a href=/tags/youtube/ class="block px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary-600">youtube (2)</a></div></div></div></div><div class="flex items-center md:hidden"><button @click="isOpen = !isOpen" type=button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500" aria-controls=mobile-menu :aria-expanded=isOpen>
+<span class=sr-only>Open main menu</span><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentcolor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><div class="block md:flex md:items-center md:justify-end md:ml-4 md:flex-grow md:max-w-2xl py-4 md:py-0"><div class="w-full relative"><div class=relative><input type=search class="w-full bg-gray-100 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white" placeholder="Search courses..." id=searchInput autocomplete=off><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"><svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/><path d="M6.25 6.25a.75.75.0 000 1.5h1.5a.75.75.0 000-1.5H6.25z"/></svg></div></div><div id=searchResults class="absolute w-full mt-1 bg-white rounded-lg shadow-lg border border-gray-200 divide-y divide-gray-200 hidden max-h-96 overflow-y-auto z-50"></div></div></div></div></nav><div x-show=isOpen class="fixed inset-0 bg-gray-800 bg-opacity-75 z-40" @click="isOpen = false" style=display:none></div><div x-show=isOpen class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50 transform transition-all duration-300 ease-in-out" x-transition:enter="transform transition ease-in-out duration-300" x-transition:enter-start=-translate-x-full x-transition:enter-end=translate-x-0 x-transition:leave="transform transition ease-in-out duration-300" x-transition:leave-start=translate-x-0 x-transition:leave-end=-translate-x-full style=display:none><div class="flex items-center justify-between p-4 border-b"><h2 class="text-lg font-semibold">Menu</h2><button @click="isOpen = false" class="p-2 rounded-md hover:bg-gray-100"><svg class="w-6 h-6" fill="none" stroke="currentcolor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6M6 6l12 12"/></svg></button></div><nav class="px-4 py-4"><a href=/ class="block py-2 text-gray-600 hover:text-gray-900">Home</a>
+<a href=/about/ class="block py-2 text-gray-600 hover:text-gray-900">About</a></nav></div></header><script>document.addEventListener("DOMContentLoaded",function(){const t=document.getElementById("searchInput"),e=document.getElementById("searchResults");let n=[];fetch("/index.json").then(e=>e.json()).then(e=>{n=e}).catch(e=>console.error("Error loading search index:",e));function s(t){if(!t){e.classList.add("hidden");return}const s=n.filter(e=>e.title.toLowerCase().includes(t.toLowerCase())||e.description.toLowerCase().includes(t.toLowerCase()));o(s)}function o(t){t.length===0?e.innerHTML='<div class="p-4 text-sm text-gray-500">No results found</div>':e.innerHTML=t.map(e=>`
+                <a href="${e.permalink}" class="block p-4 hover:bg-gray-50">
+                    <div class="font-medium text-gray-900">${e.title}</div>
+                    <div class="text-sm text-gray-500">${e.description}</div>
                 </a>
-            `).join('');
-        }
-        searchResults.classList.remove('hidden');
-    }
-
-    
-    searchInput.addEventListener('input', (e) => {
-        performSearch(e.target.value.trim());
-    });
-
-    
-    document.addEventListener('click', (e) => {
-        if (!searchResults.contains(e.target) && e.target !== searchInput) {
-            searchResults.classList.add('hidden');
-        }
-    });
-
-    
-    searchInput.addEventListener('focus', () => {
-        if (searchInput.value.trim()) {
-            searchResults.classList.remove('hidden');
-        }
-    });
-});
-</script>
-
-    
-    <main>
-        
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="mb-8">
-        <h1 class="text-3xl font-bold text-gray-900 mb-4">Course Categories</h1>
-    </div>
-
-    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-y divide-gray-200">
-            
-            <a href="https://learnaitv.com/categories/development/" class="p-6 hover:bg-gray-50 transition-colors duration-200">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                        Development
-                    </span>
-                    <span class="text-sm text-gray-500">32 courses</span>
-                </div>
-                
-                
-                <div class="text-sm text-gray-600">
-                    <p class="line-clamp-1">
-                        Latest: Anthropic&#39;s Model Context Protocol: The Future of AI Tool Integration
-                    </p>
-                </div>
-                
-            </a>
-            
-            <a href="https://learnaitv.com/categories/automation--workflows/" class="p-6 hover:bg-gray-50 transition-colors duration-200">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                        Automation &amp; Workflows
-                    </span>
-                    <span class="text-sm text-gray-500">25 courses</span>
-                </div>
-                
-                
-                <div class="text-sm text-gray-600">
-                    <p class="line-clamp-1">
-                        Latest: Anthropic&#39;s Model Context Protocol: The Future of AI Tool Integration
-                    </p>
-                </div>
-                
-            </a>
-            
-            <a href="https://learnaitv.com/categories/ai-agents/" class="p-6 hover:bg-gray-50 transition-colors duration-200">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                        AI Agents
-                    </span>
-                    <span class="text-sm text-gray-500">24 courses</span>
-                </div>
-                
-                
-                <div class="text-sm text-gray-600">
-                    <p class="line-clamp-1">
-                        Latest: Anthropic&#39;s Model Context Protocol: The Future of AI Tool Integration
-                    </p>
-                </div>
-                
-            </a>
-            
-            <a href="https://learnaitv.com/categories/rag--knowledge-management/" class="p-6 hover:bg-gray-50 transition-colors duration-200">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                        RAG &amp; Knowledge Management
-                    </span>
-                    <span class="text-sm text-gray-500">19 courses</span>
-                </div>
-                
-                
-                <div class="text-sm text-gray-600">
-                    <p class="line-clamp-1">
-                        Latest: Build a Free Local RAG Chatbot with Llama 3.2 and Flowise
-                    </p>
-                </div>
-                
-            </a>
-            
-            <a href="https://learnaitv.com/categories/content-generation--marketing/" class="p-6 hover:bg-gray-50 transition-colors duration-200">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                        Content Generation &amp; Marketing
-                    </span>
-                    <span class="text-sm text-gray-500">13 courses</span>
-                </div>
-                
-                
-                <div class="text-sm text-gray-600">
-                    <p class="line-clamp-1">
-                        Latest: Automate Personalized Emails with AI: Web Scraping &amp; LLM
-                    </p>
-                </div>
-                
-            </a>
-            
-            <a href="https://learnaitv.com/categories/prompt-engineering/" class="p-6 hover:bg-gray-50 transition-colors duration-200">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                        Prompt Engineering
-                    </span>
-                    <span class="text-sm text-gray-500">7 courses</span>
-                </div>
-                
-                
-                <div class="text-sm text-gray-600">
-                    <p class="line-clamp-1">
-                        Latest: AI Article Generator with n8n: Part 1 - Sequential LLM Chain
-                    </p>
-                </div>
-                
-            </a>
-            
-        </div>
-    </div>
-
-    <div class="mt-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-4">Looking for Tags?</h2>
-        <a href="/tags" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700">
-            View All Tags
-        </a>
-    </div>
-</div>
-
-    </main>
-    
-    <footer class="bg-gray-100 mt-auto">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <h5 class="text-lg font-semibold text-gray-900 mb-4">About Us</h5>
-                <p class="text-gray-600">A modern learning platform providing high-quality courses in web development, programming, and data science.</p>
-            </div>
-            <div>
-                <h5 class="text-lg font-semibold text-gray-900 mb-4">Quick Links</h5>
-                <ul class="space-y-2">
-                    <li><a href="/" class="text-gray-600 hover:text-primary-600">Home</a></li>
-                    <li><a href="/" class="text-gray-600 hover:text-primary-600">Courses</a></li>
-                    <li><a href="/about" class="text-gray-600 hover:text-primary-600">About</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="text-lg font-semibold text-gray-900 mb-4">Stay Updated</h5>
-                
-                    
-                        <p class="text-gray-600 mb-4">Subscribe to get notified about new courses and learning resources.</p>
-                        <form class="space-y-3">
-                            <div>
-                                <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                            </div>
-                            <button type="submit" class="w-full bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition duration-150">
-                                Subscribe
-                            </button>
-                        </form>
-                    
-                
-            </div>
-        </div>
-        <div class="mt-8 pt-8 border-t border-gray-200">
-            <p class="text-center text-gray-500">&copy; 2024 Learn AI TV. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
-    
-    <script src="https://learnaitv.com/js/main.js" defer></script>
-    
-    
-<script src="/js/search.js"></script>
-</body>
-</html>
+            `).join(""),e.classList.remove("hidden")}t.addEventListener("input",e=>{s(e.target.value.trim())}),document.addEventListener("click",n=>{!e.contains(n.target)&&n.target!==t&&e.classList.add("hidden")}),t.addEventListener("focus",()=>{t.value.trim()&&e.classList.remove("hidden")})})</script><main><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"><div class=mb-8><h1 class="text-3xl font-bold text-gray-900 mb-4">Course Categories</h1></div><div class="bg-white rounded-lg shadow-sm overflow-hidden"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-y divide-gray-200"><a href=https://learnaitv.com/categories/development/ class="p-6 hover:bg-gray-50 transition-colors duration-200"><div class="flex items-center justify-between mb-2"><span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">Development
+</span><span class="text-sm text-gray-500">33 courses</span></div><div class="text-sm text-gray-600"><p class=line-clamp-1>Latest: Anthropic's Model Context Protocol: The Future of AI Tool Integration</p></div></a><a href=https://learnaitv.com/categories/ai-agents/ class="p-6 hover:bg-gray-50 transition-colors duration-200"><div class="flex items-center justify-between mb-2"><span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">AI Agents
+</span><span class="text-sm text-gray-500">25 courses</span></div><div class="text-sm text-gray-600"><p class=line-clamp-1>Latest: Anthropic's Model Context Protocol: The Future of AI Tool Integration</p></div></a><a href=https://learnaitv.com/categories/automation--workflows/ class="p-6 hover:bg-gray-50 transition-colors duration-200"><div class="flex items-center justify-between mb-2"><span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">Automation & Workflows
+</span><span class="text-sm text-gray-500">25 courses</span></div><div class="text-sm text-gray-600"><p class=line-clamp-1>Latest: Anthropic's Model Context Protocol: The Future of AI Tool Integration</p></div></a><a href=https://learnaitv.com/categories/rag--knowledge-management/ class="p-6 hover:bg-gray-50 transition-colors duration-200"><div class="flex items-center justify-between mb-2"><span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">RAG & Knowledge Management
+</span><span class="text-sm text-gray-500">19 courses</span></div><div class="text-sm text-gray-600"><p class=line-clamp-1>Latest: Build a Free Local RAG Chatbot with Llama 3.2 and Flowise</p></div></a><a href=https://learnaitv.com/categories/content-generation--marketing/ class="p-6 hover:bg-gray-50 transition-colors duration-200"><div class="flex items-center justify-between mb-2"><span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">Content Generation & Marketing
+</span><span class="text-sm text-gray-500">13 courses</span></div><div class="text-sm text-gray-600"><p class=line-clamp-1>Latest: Automate Personalized Emails with AI: Web Scraping & LLM</p></div></a><a href=https://learnaitv.com/categories/prompt-engineering/ class="p-6 hover:bg-gray-50 transition-colors duration-200"><div class="flex items-center justify-between mb-2"><span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">Prompt Engineering
+</span><span class="text-sm text-gray-500">7 courses</span></div><div class="text-sm text-gray-600"><p class=line-clamp-1>Latest: AI Article Generator with n8n: Part 1 - Sequential LLM Chain</p></div></a></div></div><div class=mt-8><h2 class="text-2xl font-bold text-gray-900 mb-4">Looking for Tags?</h2><a href=/tags class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700">View All Tags</a></div></div></main><footer class="bg-gray-100 mt-auto"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div><h5 class="text-lg font-semibold text-gray-900 mb-4">About Us</h5><p class=text-gray-600>A modern learning platform providing high-quality courses in web development, programming, and data science.</p></div><div><h5 class="text-lg font-semibold text-gray-900 mb-4">Quick Links</h5><ul class=space-y-2><li><a href=/ class="text-gray-600 hover:text-primary-600">Home</a></li><li><a href=/ class="text-gray-600 hover:text-primary-600">Courses</a></li><li><a href=/about class="text-gray-600 hover:text-primary-600">About</a></li></ul></div><div><h5 class="text-lg font-semibold text-gray-900 mb-4">Stay Updated</h5><p class="text-gray-600 mb-4">Subscribe to get notified about new courses and learning resources.</p><form class=space-y-3><div><input type=email placeholder="Enter your email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"></div><button type=submit class="w-full bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition duration-150">
+Subscribe</button></form></div></div><div class="mt-8 pt-8 border-t border-gray-200"><p class="text-center text-gray-500">&copy; 2024 Learn AI TV. All rights reserved.</p></div></div></footer><script src=https://learnaitv.com/js/main.js defer></script><script src=/js/search.js></script></body></html>
