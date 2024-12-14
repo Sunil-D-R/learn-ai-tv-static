@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Make.com on Learn AI TV</title><link>https://learnaitv.com/tags/make.com/</link><description>Recent content in Make.com on Learn AI TV</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://learnaitv.com/tags/make.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Automate Web Scraping with Make.com, Google Sheets &amp; OpenAI</title><link>https://learnaitv.com/courses/how-to-scrape-any-website-in-9-minutes-seriously/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/how-to-scrape-any-website-in-9-minutes-seriously/</guid><description/></item><item><title>Build No-Code AI Dashboards with Bolt.new</title><link>https://learnaitv.com/courses/build-million-dollar-ai-products-with-bolt.new...-secret-method/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/build-million-dollar-ai-products-with-bolt.new...-secret-method/</guid><description/></item><item><title>Save Thousands on Make.com: Airtable Automation Strategies</title><link>https://learnaitv.com/courses/turn-1000s-of-make.com-operations-into-1-airtable-automation/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/turn-1000s-of-make.com-operations-into-1-airtable-automation/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Make.com on Learn AI TV</title>
+    <link>https://learnaitv.com/tags/make.com/</link>
+    <description>Recent content in Make.com on Learn AI TV</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://learnaitv.com/tags/make.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automate Web Scraping with Make.com, Google Sheets &amp; OpenAI</title>
+      <link>https://learnaitv.com/courses/how-to-scrape-any-website-in-9-minutes-seriously/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/how-to-scrape-any-website-in-9-minutes-seriously/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Build No-Code AI Dashboards with Bolt.new</title>
+      <link>https://learnaitv.com/courses/build-million-dollar-ai-products-with-bolt.new...-secret-method/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/build-million-dollar-ai-products-with-bolt.new...-secret-method/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Save Thousands on Make.com: Airtable Automation Strategies</title>
+      <link>https://learnaitv.com/courses/turn-1000s-of-make.com-operations-into-1-airtable-automation/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/turn-1000s-of-make.com-operations-into-1-airtable-automation/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

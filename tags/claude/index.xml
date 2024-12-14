@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Claude on Learn AI TV</title><link>https://learnaitv.com/tags/claude/</link><description>Recent content in Claude on Learn AI TV</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://learnaitv.com/tags/claude/index.xml" rel="self" type="application/rss+xml"/><item><title>Anthropic's Model Context Protocol: The Future of AI Tool Integration</title><link>https://learnaitv.com/courses/anthropic-agent-protocol/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/anthropic-agent-protocol/</guid><description/></item><item><title>Automate Personalized Emails with AI: Web Scraping &amp; LLM</title><link>https://learnaitv.com/courses/scrape-summarize-and-email-build-this-workflow-in-minutes-no-code/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/scrape-summarize-and-email-build-this-workflow-in-minutes-no-code/</guid><description/></item><item><title>Build No-Code AI Dashboards with Bolt.new</title><link>https://learnaitv.com/courses/build-million-dollar-ai-products-with-bolt.new...-secret-method/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/build-million-dollar-ai-products-with-bolt.new...-secret-method/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Claude on Learn AI TV</title>
+    <link>https://learnaitv.com/tags/claude/</link>
+    <description>Recent content in Claude on Learn AI TV</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://learnaitv.com/tags/claude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anthropic&#39;s Model Context Protocol: The Future of AI Tool Integration</title>
+      <link>https://learnaitv.com/courses/anthropic-agent-protocol/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/anthropic-agent-protocol/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automate Personalized Emails with AI: Web Scraping &amp; LLM</title>
+      <link>https://learnaitv.com/courses/scrape-summarize-and-email-build-this-workflow-in-minutes-no-code/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/scrape-summarize-and-email-build-this-workflow-in-minutes-no-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Build No-Code AI Dashboards with Bolt.new</title>
+      <link>https://learnaitv.com/courses/build-million-dollar-ai-products-with-bolt.new...-secret-method/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/build-million-dollar-ai-products-with-bolt.new...-secret-method/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Traffic Magnet Websites: AI-Powered SEO Strategy</title>
+      <link>https://learnaitv.com/courses/no-one-is-talking-about-this-ai-seo-opportunity-chatgpt-o1/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/no-one-is-talking-about-this-ai-seo-opportunity-chatgpt-o1/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Embedding on Learn AI TV</title><link>https://learnaitv.com/tags/embedding/</link><description>Recent content in Embedding on Learn AI TV</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://learnaitv.com/tags/embedding/index.xml" rel="self" type="application/rss+xml"/><item><title>Build an AI Chatbot with N8N and Google Drive</title><link>https://learnaitv.com/courses/step-by-step-tutorial-create-a-rag-chatbot-with-n8n-ai-agents-in-minutes/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/step-by-step-tutorial-create-a-rag-chatbot-with-n8n-ai-agents-in-minutes/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedding on Learn AI TV</title>
+    <link>https://learnaitv.com/tags/embedding/</link>
+    <description>Recent content in Embedding on Learn AI TV</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://learnaitv.com/tags/embedding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build an AI Chatbot with N8N and Google Drive</title>
+      <link>https://learnaitv.com/courses/step-by-step-tutorial-create-a-rag-chatbot-with-n8n-ai-agents-in-minutes/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/step-by-step-tutorial-create-a-rag-chatbot-with-n8n-ai-agents-in-minutes/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

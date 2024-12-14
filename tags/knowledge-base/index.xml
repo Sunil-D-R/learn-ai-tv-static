@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Knowledge Base on Learn AI TV</title><link>https://learnaitv.com/tags/knowledge-base/</link><description>Recent content in Knowledge Base on Learn AI TV</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://learnaitv.com/tags/knowledge-base/index.xml" rel="self" type="application/rss+xml"/><item><title>Open Web UI Update: Knowledge Bases &amp; Embedding Models</title><link>https://learnaitv.com/courses/open-webui-rag-knowledge-sentence-transformers-embeddings-models-re-ranking-models/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/open-webui-rag-knowledge-sentence-transformers-embeddings-models-re-ranking-models/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledge Base on Learn AI TV</title>
+    <link>https://learnaitv.com/tags/knowledge-base/</link>
+    <description>Recent content in Knowledge Base on Learn AI TV</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://learnaitv.com/tags/knowledge-base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open Web UI Update: Knowledge Bases &amp; Embedding Models</title>
+      <link>https://learnaitv.com/courses/open-webui-rag-knowledge-sentence-transformers-embeddings-models-re-ranking-models/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/open-webui-rag-knowledge-sentence-transformers-embeddings-models-re-ranking-models/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

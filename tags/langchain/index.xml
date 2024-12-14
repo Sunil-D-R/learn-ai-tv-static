@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LangChain on Learn AI TV</title><link>https://learnaitv.com/tags/langchain/</link><description>Recent content in LangChain on Learn AI TV</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://learnaitv.com/tags/langchain/index.xml" rel="self" type="application/rss+xml"/><item><title>Best Practices for Building AI-Powered Web Scrapers in 2024</title><link>https://learnaitv.com/courses/this-is-how-i-scrape-99-websites-via-llm/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/this-is-how-i-scrape-99-websites-via-llm/</guid><description/></item><item><title>Build a Personal AI Agent with WhatsApp Integration</title><link>https://learnaitv.com/courses/build-a-personal-ai-agent-on-whatsapp-with-n8n-images-+-audio/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/build-a-personal-ai-agent-on-whatsapp-with-n8n-images-+-audio/</guid><description/></item><item><title>Build Your First AI Agent - Beginner Tutorial</title><link>https://learnaitv.com/courses/build-your-first-ai-agent-as-a-total-beginner-no-code--n8n-beginners-tutorial/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/build-your-first-ai-agent-as-a-total-beginner-no-code--n8n-beginners-tutorial/</guid><description/></item><item><title>Build Your Own Voice AI Assistant with n8n</title><link>https://learnaitv.com/courses/build-your-own-rag-ai-voice-agent-with-n8n--complete-step-by-step-tutorial/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/build-your-own-rag-ai-voice-agent-with-n8n--complete-step-by-step-tutorial/</guid><description/></item><item><title>Pydantic AI: A New LLM Library</title><link>https://learnaitv.com/courses/pydantic-ai---the-new-agent-builder-on-the-block/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/pydantic-ai---the-new-agent-builder-on-the-block/</guid><description/></item><item><title>From LLMs to Compound AI Systems: A Shift in Perspective</title><link>https://learnaitv.com/courses/stanford-webinar---large-language-models-get-the-hype-but-compound-systems-are-the-future-of-ai/</link><pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/stanford-webinar---large-language-models-get-the-hype-but-compound-systems-are-the-future-of-ai/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LangChain on Learn AI TV</title>
+    <link>https://learnaitv.com/tags/langchain/</link>
+    <description>Recent content in LangChain on Learn AI TV</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://learnaitv.com/tags/langchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Practices for Building AI-Powered Web Scrapers in 2024</title>
+      <link>https://learnaitv.com/courses/this-is-how-i-scrape-99-websites-via-llm/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/this-is-how-i-scrape-99-websites-via-llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Build a Personal AI Agent with WhatsApp Integration</title>
+      <link>https://learnaitv.com/courses/build-a-personal-ai-agent-on-whatsapp-with-n8n-images-&#43;-audio/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/build-a-personal-ai-agent-on-whatsapp-with-n8n-images-&#43;-audio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Build Your First AI Agent - Beginner Tutorial</title>
+      <link>https://learnaitv.com/courses/build-your-first-ai-agent-as-a-total-beginner-no-code--n8n-beginners-tutorial/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/build-your-first-ai-agent-as-a-total-beginner-no-code--n8n-beginners-tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Build Your Own Voice AI Assistant with n8n</title>
+      <link>https://learnaitv.com/courses/build-your-own-rag-ai-voice-agent-with-n8n--complete-step-by-step-tutorial/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/build-your-own-rag-ai-voice-agent-with-n8n--complete-step-by-step-tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pydantic AI: A New LLM Library</title>
+      <link>https://learnaitv.com/courses/pydantic-ai---the-new-agent-builder-on-the-block/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/pydantic-ai---the-new-agent-builder-on-the-block/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>From LLMs to Compound AI Systems: A Shift in Perspective</title>
+      <link>https://learnaitv.com/courses/stanford-webinar---large-language-models-get-the-hype-but-compound-systems-are-the-future-of-ai/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/stanford-webinar---large-language-models-get-the-hype-but-compound-systems-are-the-future-of-ai/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

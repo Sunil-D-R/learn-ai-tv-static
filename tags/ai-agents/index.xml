@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI Agents on Learn AI TV</title><link>https://learnaitv.com/tags/ai-agents/</link><description>Recent content in AI Agents on Learn AI TV</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://learnaitv.com/tags/ai-agents/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Agents: The Future of Business is Here!</title><link>https://learnaitv.com/courses/i-watched-an-ai-agent-create-its-own-company---not-clickbait/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/i-watched-an-ai-agent-create-its-own-company---not-clickbait/</guid><description/></item><item><title>Building AI Agents with Long-Term Memory</title><link>https://learnaitv.com/courses/unlock-ai-agent-real-power-long-term-memory--self-improving/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/unlock-ai-agent-real-power-long-term-memory--self-improving/</guid><description/></item><item><title>Pydantic AI: A Python Agent Framework for Generative AI</title><link>https://learnaitv.com/courses/maybe-you-can-build-production-grade-ai-agents/</link><pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate><guid>https://learnaitv.com/courses/maybe-you-can-build-production-grade-ai-agents/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Agents on Learn AI TV</title>
+    <link>https://learnaitv.com/tags/ai-agents/</link>
+    <description>Recent content in AI Agents on Learn AI TV</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://learnaitv.com/tags/ai-agents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agents: The Future of Business is Here!</title>
+      <link>https://learnaitv.com/courses/i-watched-an-ai-agent-create-its-own-company---not-clickbait/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/i-watched-an-ai-agent-create-its-own-company---not-clickbait/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Building AI Agents with Long-Term Memory</title>
+      <link>https://learnaitv.com/courses/unlock-ai-agent-real-power-long-term-memory--self-improving/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/unlock-ai-agent-real-power-long-term-memory--self-improving/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pydantic AI: A Python Agent Framework for Generative AI</title>
+      <link>https://learnaitv.com/courses/maybe-you-can-build-production-grade-ai-agents/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://learnaitv.com/courses/maybe-you-can-build-production-grade-ai-agents/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
